@@ -1,3 +1,4 @@
+// Uppercase only even positions in string 
 import java.io.*;
 import java.util.*;
 
