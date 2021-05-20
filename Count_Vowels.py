@@ -16,6 +16,9 @@ class GFG {
         System.out.println(vow);
 	}
 }
+# prog.java:10: error: incompatible types: char cannot be converted to CharSequence
+#             if("aeiouAEIOU".contains(a.charAt(i)))
+# on using this condn     ^
 
 
 # https://ide.geeksforgeeks.org/YapEO0Ywce
