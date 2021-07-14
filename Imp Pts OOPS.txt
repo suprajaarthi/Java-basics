@@ -1,0 +1,97 @@
+CLASS 
+In object-oriented programming, a class is a blueprint for creating objects (a particular data structure), 
+providing initial values for state (member variables or attributes), and 
+implementations of behavior (member functions or methods). 
+The user-defined objects are created using the class keyword.
+
+OBJECT 
+Object is an instance of a particular class or subclass with the class's own methods or procedures and data variables
+It has its own state behaviour and identity 
+It is a real-world entity such as a book , car 
+
+
+INHERITANCE 
+Inheritance can be defined as the process where one class acquires the properties (methods and fields) of another.
+The class which inherits the properties of other is known as subclass (derived class, child class) 
+and the class whose properties are inherited is known as superclass (base class, parent class).
+With the use of inheritance the information is made manageable in a hierarchical order.
+Eg : 
+Animal class has methods like => Eat sleep 
+Subclass Dog has same methods inherit , additionally bark() can be instantiated newly 
+
+POLYMORPHISM 
+The word polymorphism means having many forms.
+Real life example of polymorphism: A person at the same time can have different characteristic.
+Like a man at the same time is a father, a husband, an employee. 
+So the same person posses different behavior in different situations. This is called polymorphism
+
+OVERLOADING 
+Overloading is when two or more methods in a class with the same name with differeent parameters
+It is also known as compile-time or static polymorphism.
+Eg : Calculate the area 
+Square => Side is the param 
+Circle => Radius 
+
+OVERRIDING 
+If the same method signature is presented in both child and parent class is known as method overriding. 
+Same name same param same return type 
+Eg : Calculate salary of employee 
+param no of days , salary per day
+But in runtime value varies fpr manager => 5000 ; salesperson => 3000 per day 
+
+ABSTRACTION 
+It allows us to show only essential data or information to the user and hides the implementation details from the user.
+A real-world example of abstraction is driving a car. When we drive a car, we do not need to know how the engine works (implementation) 
+we only know how Accelerator and brake works.
+
+There are two ways to achieve data abstraction
+Abstract class
+Abstract method
+
+Encapsulation 
+Binding (or wrapping) code and data together into a single unit are known as encapsulation.
+For example, a capsule, it is wrapped with different medicines.
+Java class is also an example , bcoz it has data members variables methods 
+
+33. Differentiate between data abstraction and encapsulation.
+
+Data abstraction	Encapsulation
+Solves the problem at the design level	Solves the problem at the implementation level
+Allows showing important aspects while hiding implementation details	Binds code and data together into a single unit and hides it from the world
+
+
+
+Aggregation 
+Aggregation is a special form of association. 
+It is a relationship between two classes like association, however its a directional association, which means it is strictly a one way association.
+It represents a HAS-A relationship.
+
+Aggregation Example in Java
+For example consider two classes Student class and Address class.
+Every student has an address so the relationship between student and address is a Has-A relationship.
+But if you consider its vice versa then it would not make any sense as an Address doesn’t need to have a Student necessarily.
+
+
+Composition 
+The Composition is a way to design or implement the "has-a" relationship. Composition and Inheritance both are design techniques. 
+The Inheritance is used to implement the "is-a" relationship. 
+The "has-a" relationship is used to ensure the code reusability in our program.
+In Composition, we use an instance variable that refers to another object.
+
+The composition relationship of two objects is possible when one object contains another object, and that object is fully dependent on it. 
+
+EXAMPLE : 
+Car and Vehicle share the ‘IS-A’ relationship as a car is a vehicle. 
+Hence we create a car object from the existing vehicle object by adding more characteristics to it.
+
+Car and Engine share the ‘Has-a’ relationship. A car always has an Engine. 
+So what we do here is that we do not extend the properties of the Engine object but we use the Engine object directly.
+This is done in Java using composition.
+
+Diff bw Aggregation and Composition 
+In Aggregation , parent and child entity maintain Has-A relationship but both can also exist independently.
+In Composition, parent owns child entity so child entity can't exist without parent entity
+
+
+
+

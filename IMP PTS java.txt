@@ -1,0 +1,204 @@
+What gives Java its 'write once and run anywhere' nature?
+Java compiler converts the Java programs into the class file (Byte Code) which is the intermediate language between source code and machine code.
+This bytecode is not platform specific and can be executed on any computer.
+
+
+GARBAGE COLLECTION 
+Java garbage collection is the process by which Java programs perform automatic memory management. 
+Java programs compile to bytecode that can be run on a JVM.
+When Java programs run on the JVM, objects are created on the heap, which is a portion of memory dedicated to the program.
+Eventually, some objects will no longer be needed. The garbage collector finds these unused objects and deletes them to free up memory.
+
+
+Access modifiers
+In Java, access specifiers are the keywords which are used to define the access scope of the method, class, or a variable.
+In Java, there are four access specifiers given below.
+Public    The classes, methods, or variables which are defined as public, can be accessed by any class or method.
+Protected Protected can be accessed by the class of the same package, or by the sub-class of this class, or within the same class.
+Default   Default are accessible within the package only. By default, all the classes, methods, and variables are of default scope.
+Private   The private class, methods, or variables defined as private can be accessed within the class only.
+
+
+Static Methods & Variables
+Static is used in the case, where we need to define variables or methods which are common to all the objects of the class.
+The methods or variables defined as static are shared among all the objects of the class.
+We do not need to create the object to access such variables / methods  
+For example, In the class simulating the collection of the students in a college, the name of the college is the common attribute to all the students.
+Therefore, the college name will be defined as static.
+
+
+Why is the main method static?
+Because the object is not required to call the static method. 
+If we make the main method non-static, JVM will have to create its object first and then call main() method which will lead to the extra memory allocation
+
+Diff b/w JVM JDK JRE 
+JVM
+It provides the runtime environment in which the java byte code can be executed 
+It is a runtime instance which is created when we run the Java class.
+Its implementation has been provided by Oracle and other companies
+
+JRE 
+The Java Runtime Environment is a set of software tools which are used for developing Java applications.
+It physically exists 
+It contains a set of libraries + other files that JVM uses at runtime.
+
+JDK 
+ It is a software development environment which is used to develop Java applications and applets.
+ It physically exists. 
+ It contains JRE + development tools. 
+
+
+Constructor 
+The constructor can be defined as the special type of method that is
+ => invoked when the class is instantiated, 
+ => and it is used to initialize the state of an object 
+ => and it allocates memory for the object 
+Every time, an object is created using the new keyword, the default constructor of the class is called.
+The name of the constructor must be similar to the class name. The constructor must not have an explicit return type.
+
+
+Destructor 
+Defn: 
+A destructor is a member function that is invoked automatically when the object goes out of scope or is explicitly destroyed by a call to delete .
+A destructor has the same name as the class,
+
+There is no destructor in java. Destructor is in C++ programming language.
+If we are talking about java, then java has a feature called automatic garbage collector which frees the dynamically allocated memory when there is no use. 
+
+Copy constructor 
+There is no copy constructor in java. However, we can copy the values from one object to another like copy constructor in C++.
+There are many ways to copy the values of one object into another in java. They are:
+* By constructor
+* By assigning the values of one object into another
+* By clone() method of Object class
+
+
+Java Interpreter
+As the Java compiler compiles the source code into the Java bytecode.
+In the same way, the Java interpreter converts or translates the bytecode into the machine-understandable format 
+
+If the JVM is installed on any system it means that the platform is JVM enabled. 
+The platform performs all the tasks of the Java run-time system.
+It loads the Java class file and interprets the compiled byte-code.
+
+Just-In-Time(JIT) compiler: 
+It is used to improve the performance. 
+JIT compiles parts of the bytecode that have similar functionality at the same time, and hence reduces the amount of time needed for compilation.
+
+
+Packages 
+Package in Java is a mechanism to encapsulate a group of classes, sub packages and interfaces
+
+Advantages: 
+* Packages avoid the name clashes.
+* The Package provides easier access control.
+* We can also have the hidden classes that are not visible outside and used by the package.
+* It is easier to locate the related classes.
+
+Example:
+A real-life example is when you download a movie, song, or game, you make a different folder for each category like movie, song, etc.
+In the same way, a group of packages in java is just like a library. 
+The classes and interfaces of a package are like books in the library that can reuse several times when we need them.
+
+
+Q) Can you override a private or static method in Java?
+1) you can not override a private or static method in Java.
+
+2) you cannot override a private method in sub class because it's not accessible there, 
+   what you do is create another private method with the same name in the child class.
+
+3) For static methods if you create a similar method with same return type and same method arguments in child class then it will hide the superclass method, 
+   this is known as method hiding and not overriding 
+
+Q) Why Java is not 100% Object-oriented?
+Because of Primitive data types namely:
+boolean, byte, char, int, float, double, long, short
+We have wrapper classes which actually “wrap” the primitive data type into an object of that class. 
+
+
+Why pointers are not used in Java? 
+ 1) They are unsafe
+ 2) Increases the complexity of the program and since Java is known for its  simplicity of code, adding the concept of pointers will be contradicting.
+ 3) Since JVM is responsible for implicit memory allocation, thus in order to avoid direct access to memory by the user,  pointers are discouraged in Java
+ 
+ 
+Q) Why String is immutable in java?
+1) String pool requires string to be immutable otherwise shared reference can be changed from anywhere.
+2) security because string is shared on different area like file system, networking connection, database connection ,
+having immutable string allows you to be secure and safe because no one can change reference of string once it gets created.
+
+
+
+Can you create an instance of an abstract class?
+
+No. Instances of an abstract class cannot be created because it does not have a complete implementation. 
+However, instances of subclass inheriting the abstract class can be created
+
+
+Abstract class 
+abstract class is a class that consists of abstract methods. 
+These methods are basically declared but not defined. 
+If these methods are to be used in some subclass, they need to be exclusively defined in the subclass.
+
+
+Interface in java 
+* It has only abstract methods and static constants 
+* It is used to achieve abstraction and multiple inheritance 
+* In other words, we can say interfaces can have abstract methods and variables. It cannot have a method body.
+
+
+Q) What is a marker interface?
+A Marker interface can be defined as the interface having no data member and member functions. 
+In simpler terms, an empty interface is called the Marker interface. 
+
+Q)Does “finally” always execute in Java?
+Not in following cases
+*System.exit() function
+*System crash
+
+
+Q) How Can You Make a Class Immutable?
+1) Declare class as final 
+2) Declare all class members as final and private 
+3) No setters 
+// A setter is a method that updates the value of a variable. And a getter is a method that reads the value of a variable. 
+Getter and setter are also known as accessor and mutator in Java.
+
+Q)What is singleton class in Java and how can we make a class singleton?
+  1) In object-oriented programming, a singleton class is a class that can have only one object (an instance of the class) at a time.
+  
+  To design a singleton class:
+  * Make constructor as private.
+  * Write a static method that has return type object of this singleton class. Here, the concept of Lazy initialization is used to write this static method.
+  
+     There are two forms of singleton design pattern
+       ->Early Instantiation: creation of instance at load time.
+       ->Lazy Instantiation: creation of instance when required.
+       
+       
+ Q)this keyword
+* this can be used to refer to the current class instance variable.
+* this can be used to invoke current class method (implicitly)
+* this() can be used to invoke the current class constructor.
+* this can be passed as an argument in the method call.
+* this can be passed as an argument in the constructor call.
+* this can be used to return the current class instance from the method.
+
+Virtual functions 
+Virtual functions are functions that are present in the parent class and are overridden by the subclass.
+These functions are used to achieve runtime polymorphism.
+
+
+What is an exception?
+
+An exception is a kind of notification that interrupts the normal execution of a program. 
+Exceptions provide a pattern to the error and transfer the error to the exception handler to resolve it. 
+The state of the program is saved as soon as an exception is raised.
+
+ What is exception handling?
+
+Exception handling in Object-Oriented Programming is a very important concept that is used to manage errors.
+An exception handler allows errors to be thrown and caught and implements a centralized mechanism to resolve them
+
+Diff bw Final finally finalize kw 
+

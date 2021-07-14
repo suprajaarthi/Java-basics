@@ -1,0 +1,31 @@
+Threads allows a program to operate more efficiently by doing multiple things at the same time. 
+Threads can be used to perform complicated tasks in the background without interrupting the main program.
+
+
+There are two ways to create a thread:
+By extending Thread class
+By implementing Runnable interface.
+
+
+Commonly used Constructors of Thread class:
+Thread()
+Thread(String name)
+Thread(Runnable r)
+Thread(Runnable r,String name)
+
+
+DAEMON THREADS 
+It provides services to user threads for background supporting tasks. It has no role in life than to serve user threads.
+It is a low priority thread.
+Its life depends on user threads.
+When all the user threads dies, JVM terminates this thread automatically.
+
+
+GARBAGE COLLECTION 
+Garbage Collection is process of reclaiming the runtime unused memory automatically.
+In other words, it is a way to destroy the unused objects.
+
+Advantage of Garbage Collection
+It makes java memory efficient because garbage collector removes the unreferenced objects from heap memory.
+It is automatically done by the garbage collector(a part of JVM) so we don't need to make extra efforts.
+
