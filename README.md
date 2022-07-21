@@ -8,4 +8,4 @@ Java basics
 
 Class 
 - Each class in java contains related functions 
-- Eg : SUpermarket 
+- Eg : Supermarket contains the related products by same token
