@@ -9,3 +9,7 @@ Java basics
 Class 
 - Each class in java contains related functions 
 - Eg : Supermarket contains the related products by same token
+
+Naming convention 
+- PascalNamingConvention Classes
+- camelNamingConvention  Methods
