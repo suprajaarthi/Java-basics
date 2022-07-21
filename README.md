@@ -13,3 +13,7 @@ Class
 Naming convention 
 - PascalNamingConvention Classes
 - camelNamingConvention  Methods
+
+Package 
+- used to group related classes 
+- When creating an application we'll be having 1000's of classes, so it is important to properly organise them 
