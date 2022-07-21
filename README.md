@@ -1,5 +1,11 @@
 # Java-basics
-Java basics
+
+Java basics!
+
+How is java code compiled 
+
+[Screenshot 2022-07-21 at 8 42 34 AM](https://user-images.githubusercontent.com/51900501/180121980-54578329-2d33-497e-9575-7844f7f52131.png)
+
 
 - Filename should be as same as class name 
 - To execute 
