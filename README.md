@@ -31,3 +31,7 @@ Package
 - Casting 
 - Numbers Strings Arrays 
 - Read input 
+
+Datatypes 
+- Primitive => Store simple values
+- Reference => Store complex objects 
