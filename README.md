@@ -5,3 +5,7 @@ Java basics
 - To execute 
   - javac Hello.java
   - java Hello 
+
+Class 
+- Each class in java contains related functions 
+- Eg : SUpermarket 
