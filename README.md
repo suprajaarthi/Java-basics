@@ -24,3 +24,10 @@ Naming convention
 Package 
 - used to group related classes 
 - When creating an application we'll be having 1000's of classes, so it is important to properly organise them 
+
+1st step 
+- Variables and Constants
+- Primitive and Reference Types 
+- Casting 
+- Numbers Strings Arrays 
+- Read input 
