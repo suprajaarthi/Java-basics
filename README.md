@@ -34,4 +34,6 @@ Package
 
 Datatypes 
 - Primitive => Store simple values
+- ![Screenshot 2022-07-21 at 8 56 34 AM](https://user-images.githubusercontent.com/51900501/180123512-afeb9532-46df-4171-b3b0-0715746bf454.png)
+
 - Reference => Store complex objects 
