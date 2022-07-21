@@ -5,6 +5,7 @@ Java basics!
 How is java code compiled 
 
 [Screenshot 2022-07-21 at 8 42 34 AM](https://user-images.githubusercontent.com/51900501/180121980-54578329-2d33-497e-9575-7844f7f52131.png)
+![Screenshot 2022-07-21 at 8 43 40 AM](https://user-images.githubusercontent.com/51900501/180122083-f4f6a392-be19-4918-a70a-9bb8c847fadc.png)
 
 
 - Filename should be as same as class name 
