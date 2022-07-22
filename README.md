@@ -24,6 +24,8 @@ Naming convention
 Package 
 - used to group related classes 
 - When creating an application we'll be having 1000's of classes, so it is important to properly organise them 
+- Eg : Date class is present in both Java.util and Java.sql
+- So , the benefit of Package is that we can have same class in different packages , and packages create a namespace for the classes  
 
 1st step 
 - Variables and Constants
